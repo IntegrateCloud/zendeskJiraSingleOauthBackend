@@ -679,7 +679,7 @@ router.post('/create-notify', async (req, res) => {
             let text = requestBody.message
             if (files) {
                 text += '\n' + '=====================attachementslinks==========================' + '\n'
-                const blobServiceClient = BlobServiceClient.fromConnectionString(key)
+                const blobServiceClient = BlobServiceClient.fromConnectionString(process.env.AZURE_STRING)
                 const containerClient = blobServiceClient.getContainerClient(process.env.AZURE_CONTAINER)
                 if (Array.isArray(files)) {
                     await Promise.all(files.map(async file => {
