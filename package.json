@@ -1,0 +1,25 @@
+{
+  "name": "jira-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/storage-blob": "^12.16.0",
+    "@types/express": "^4.17.17",
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
+    "jira-client": "^8.2.2",
+    "moment": "^2.29.4",
+    "mongoose": "^7.6.5"
+  }
+}
